@@ -1,0 +1,6 @@
+vm_name,subscription,region,cpu_avg_percent,ram_avg_percent,disk_usage_percent,vm_size,monthly_cost,estimated_monthly_savings
+app-vm-01,prod-sub,eastus,12,35,40,D8s_v3,320,96.0
+batch-vm-01,data-sub,westus,8,20,15,D16s_v3,540,162.0
+test-vm-01,dev-sub,centralus,5,15,10,D8s_v3,310,93.0
+db-vm-01,prod-sub,westus,18,50,55,D8s_v3,410,123.0
+etl-vm-01,data-sub,eastus2,10,25,20,D16s_v3,600,180.0
