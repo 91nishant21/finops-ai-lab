@@ -1,0 +1,9 @@
+section,content
+Summary Header,Executive Summary
+AI Summary,The environment contains 8 virtual machines.
+AI Summary,A total of 5 VMs have been identified as optimization candidates.
+AI Summary,"Estimated monthly savings are $654.0, representing a savings opportunity of 23.27% of the total monthly cost ($2810.0)."
+Recommendation Header,Recommendations
+Recommendation,"Review and resize underutilized VMs such as app-vm-01, batch-vm-01, test-vm-01"
+Recommendation,Validate sizing policies across subscriptions to reduce overprovisioning
+Recommendation,Implement periodic utilization monitoring to track optimization opportunities

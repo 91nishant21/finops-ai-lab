@@ -1,7 +1,10 @@
-FinOps Executive Summary
-------------------------
-The environment contains 8 VMs.
-A total of 5 VMs are identified as optimization candidates.
-Estimated monthly savings are $654.0.
-This represents a savings opportunity of 23.27%.
-Top optimization candidates include: app-vm-01, batch-vm-01, test-vm-01.
+Executive Summary
+
+The environment contains 8 virtual machines.
+A total of 5 VMs have been identified as optimization candidates.
+Estimated monthly savings are $654.0, representing a savings opportunity of 23.27% of the total monthly cost ($2810.0).
+
+Recommendations
+- Review and resize underutilized VMs such as app-vm-01, batch-vm-01, test-vm-01
+- Validate sizing policies across subscriptions to reduce overprovisioning
+- Implement periodic utilization monitoring to track optimization opportunities
