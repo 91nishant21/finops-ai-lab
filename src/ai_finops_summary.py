@@ -1,4 +1,8 @@
 import csv
+from openai import OpenAI
+import os
+
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 summary_file = "data/finops_summary.csv"
 candidates_file = "data/optimization_candidates.csv"
@@ -22,18 +26,28 @@ with open(candidates_file, mode="r") as cfile:
 
 top_candidates = ", ".join(candidate_names[:3])
 
-report = f"""
-FinOps Executive Summary
-------------------------
-The environment contains {total_vms} VMs.
-A total of {optimization_candidates} VMs are identified as optimization candidates.
-Estimated monthly savings are ${estimated_savings}.
-This represents a savings opportunity of {savings_opportunity}%.
-Top optimization candidates include: {top_candidates}.
+prompt = f"""
+You are a FinOps cloud cost optimization expert.
+
+Create a short executive summary for leadership based on this data:
+
+Total VMs: {total_vms}
+Optimization Candidates: {optimization_candidates}
+Estimated Monthly Savings: ${estimated_savings}
+Savings Opportunity: {savings_opportunity}%
+Top candidate VMs: {top_candidates}
+
+Keep it concise and professional.
 """
 
-with open(output_file, mode="w") as outfile:
-    outfile.write(report.strip())
+response = client.responses.create(
+    model="gpt-4.1-mini",
+    input=prompt
+)
 
-print("AI-style summary generated successfully.")
-print(f"Output file created: {output_file}")
+summary_text = response.output[0].content[0].text
+
+with open(output_file, "w") as outfile:
+    outfile.write(summary_text)
+
+print("AI FinOps summary generated.")
