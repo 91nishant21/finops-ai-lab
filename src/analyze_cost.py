@@ -9,6 +9,7 @@ print("Reading VM cost data...\n")
 total_savings = 0
 candidate_count = 0
 total_vms = 0
+total_monthly_cost = 0
 
 with open(input_file, mode="r") as infile, open(output_file, mode="w", newline="") as outfile:
     reader = csv.DictReader(infile)
@@ -25,6 +26,7 @@ with open(input_file, mode="r") as infile, open(output_file, mode="w", newline="
 
         cpu = float(row["cpu_avg_percent"])
         monthly_cost = float(row["monthly_cost"])
+        total_monthly_cost += monthly_cost
 
         if cpu < 20:
             candidate_count += 1
@@ -42,21 +44,33 @@ with open(input_file, mode="r") as infile, open(output_file, mode="w", newline="
                 f"Estimated Savings: ${estimated_savings}"
             )
 
+savings_opportunity_pct = round((total_savings / total_monthly_cost) * 100, 2) if total_monthly_cost else 0
+
 with open(summary_file, mode="w", newline="") as sfile:
-    fieldnames = ["total_vms", "optimization_candidates", "estimated_total_monthly_savings"]
+    fieldnames = [
+        "total_vms",
+        "optimization_candidates",
+        "estimated_total_monthly_savings",
+        "total_monthly_cost",
+        "savings_opportunity_pct"
+    ]
     writer = csv.DictWriter(sfile, fieldnames=fieldnames)
 
     writer.writeheader()
     writer.writerow({
         "total_vms": total_vms,
         "optimization_candidates": candidate_count,
-        "estimated_total_monthly_savings": round(total_savings, 2)
+        "estimated_total_monthly_savings": round(total_savings, 2),
+        "total_monthly_cost": round(total_monthly_cost, 2),
+        "savings_opportunity_pct": savings_opportunity_pct
     })
 
 print("\n----------------------------------")
 print(f"Total VMs: {total_vms}")
 print(f"Total Optimization Candidates: {candidate_count}")
 print(f"Estimated Monthly Savings: ${round(total_savings, 2)}")
+print(f"Total Monthly Cost: ${round(total_monthly_cost, 2)}")
+print(f"Savings Opportunity: {savings_opportunity_pct}%")
 print("----------------------------------")
 
 print("\nOptimization file created:", output_file)

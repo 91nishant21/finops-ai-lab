@@ -1,2 +1,2 @@
-total_vms,optimization_candidates,estimated_total_monthly_savings
-8,5,654.0
+total_vms,optimization_candidates,estimated_total_monthly_savings,total_monthly_cost,savings_opportunity_pct
+8,5,654.0,2810.0,23.27
