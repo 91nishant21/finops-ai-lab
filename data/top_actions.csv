@@ -1,0 +1,4 @@
+rank,vm_name,severity,recommended_action,recommended_vm_size,estimated_monthly_savings,priority_score
+1,batch-vm-01,High,Resize,D8s_v3,162.0,6
+2,etl-vm-01,Medium,Resize,D8s_v3,180.0,5
+3,test-vm-01,High,Resize,D4s_v3,93.0,4
