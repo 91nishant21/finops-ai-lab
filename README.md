@@ -65,16 +65,15 @@ OpenAI Executive Summary
 
 ## Dashboard Preview
 
-![Overview](Docs/screenshot/PowerBI_Finops_Overview.PNG)
+![Overview](Docs/screenshots/PowerBI_Finops_Overview.PNG)
 ![Dashboard](Docs/screenshots/PowerBI_Finops_Dashboard.PNG)
 ![AI Summary](Docs/screenshots/PowerBI_Finops_AI_Summary.PNG)
 ![Agent Insight](docs/screenshots/PowerBI_Finops_AI_Decision_Engine.PNG)
 
- 
-## Power BI Dashboard
+ ## Power BI Dashboard
 
 The Power BI report is not shared publicly due to best practices around data and model governance.
 
 However, key insights and visuals are provided via screenshots in the repository.
 
-The dashboard can be recreated using the provided dataset and measures.
+The dashboard can be recreated using the provided dataset and measures
