@@ -51,14 +51,6 @@ OpenAI Executive Summary
 - GitHub
 - Terraform
 
-## Screenshots
-
-### Power BI Dashboard
-See `docs/screenshots/dashboard_overview.png`
-
-### AI Summary Output
-See `docs/screenshots/ai_summary_output.png`
-
 ## Skills Demonstrated
 - Python data processing
 - FinOps-style cost analysis
@@ -67,6 +59,10 @@ See `docs/screenshots/ai_summary_output.png`
 - GitHub project structuring
 - Cloud optimization reporting
 
+## Run the project
+
+ Run `python run_pipeline.py`
+
 ## Dashboard Preview
 
 ![Overview](Docs/screenshot/PowerBI_Finops_Overview.png)
@@ -74,7 +70,7 @@ See `docs/screenshots/ai_summary_output.png`
 ![AI Summary](Docs/screenshots/PowerBI_Finops_AI_Summary.png)
 ![Agent Insight](docs/screenshots/PowerBI_Finops_AI_Decision_Engine.PNG)
 
-
+ 
 ## Power BI Dashboard
 
 The Power BI report is not shared publicly due to best practices around data and model governance.
