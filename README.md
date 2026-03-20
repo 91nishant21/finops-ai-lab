@@ -65,9 +65,9 @@ OpenAI Executive Summary
 
 ## Dashboard Preview
 
-![Overview](Docs/screenshots/PowerBI_Finops_Overview.PNG)
-![Dashboard](Docs/screenshots/PowerBI_Finops_Dashboard.PNG)
-![AI Summary](Docs/screenshots/PowerBI_Finops_AI_Summary.PNG)
+![Overview](docs/screenshots/PowerBI_Finops_Overview.PNG)
+![Dashboard](docs/screenshots/PowerBI_Finops_Dashboard.PNG)
+![AI Summary](docs/screenshots/PowerBI_Finops_AI_Summary.PNG)
 ![Agent Insight](docs/screenshots/PowerBI_Finops_AI_Decision_Engine.PNG)
 
  ## Power BI Dashboard
