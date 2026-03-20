@@ -49,3 +49,20 @@ OpenAI Executive Summary
 - OpenAI API
 - GitHub
 - Terraform
+
+## Screenshots
+
+### Power BI Dashboard
+See `docs/screenshots/dashboard_overview.png`
+
+### AI Summary Output
+See `docs/screenshots/ai_summary_output.png`
+
+## Skills Demonstrated
+- Python data processing
+- FinOps-style cost analysis
+- Power BI dashboard development
+- OpenAI API integration
+- GitHub project structuring
+- Cloud optimization reporting
+
