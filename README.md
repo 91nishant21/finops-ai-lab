@@ -36,6 +36,7 @@ OpenAI Executive Summary
 1. Run `python src/analyze_cost.py`
 2. Refresh Power BI dashboard
 3. Run `python src/ai_finops_summary.py`
+4. Run `python run_pipeline.py`
 
 ## Outputs
 - Optimization candidate dataset
