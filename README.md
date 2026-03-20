@@ -66,3 +66,9 @@ See `docs/screenshots/ai_summary_output.png`
 - GitHub project structuring
 - Cloud optimization reporting
 
+## Dashboard Preview
+
+![Overview](Docs/screenshot/PowerBI_Finops_Overview.png)
+![Dashboard](Docs/screenshots/PowerBI_Finops_Dashboard.PNG)
+![AI Summary](Docs/screenshots/PowerBI_Finops_AI_Summary.png)
+![Agent Insight](docs/screenshots/PowerBI_Finops_AI_Decision_Engine.PNG)
